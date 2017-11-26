@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+header#main {
+
+    #topBar {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        #brand {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+} //header#main

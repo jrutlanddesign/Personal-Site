@@ -1,0 +1,14 @@
+<section id="{{section.name}}">
+    <h1>{{section.sub_text}}</h1>
+    <h3>{{section.heading_text}}</h3>
+    
+    <div class="about-wrapper">
+        <div class="text">
+            {% for paragaph in section.body_text %}
+                <p>{{paragaph}}</p>
+            {% endfor %}
+        </div>
+        <img src="{{ROOT}}{{section.image}}" alt="Picture of me" class="me"/>
+    </div>
+    <span class="clearFix"></span>
+</section>

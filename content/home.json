@@ -1,0 +1,78 @@
+{
+    "title": "Freelance UI / UX Designer United Kingdom",
+    "uses": [{
+        "page": "blog",
+        "limit": 2
+    }, {
+        "page": "work",
+        "limit": 2 
+    }],
+    "sections": [{
+        "name": "intro",
+        "heading_text": "A freelance UI & UX designer for digital products.",
+        "sub_text": "I create interfaces and experiences for businesses big and small across the UK"
+    },{
+        "name": "about",
+        "heading_text": "About Me",
+        "sub_text": "The man, the myth, the designer",
+        "body_text": [
+            "Thanks for visiting my UI design portfolio. I'm a freelance UI designer based in Blackpool, Lancashire.",
+            "For over a decade I have been crafting modern, usable interfaces for the web and mobile apps with clients around the world.",
+            "I love creating designs for startups and businesses with a genuine passion for their digital products and services, who value design and how it solves business problems with good user experience.",
+            "I am currently taking on new UI design projects. If you're in need of a design solution for your business, let’s chat.",
+            "Still want to know more about me and find out what makes me tick? Here’s a more detailed look into me."
+        ],
+        "image": "assets/images/joe.jpg"
+    },{
+        "name": "services",
+        "heading_text": "services",
+        "sub_text": "Helping your business with design solutions",
+        "jobs": [
+            {
+                "title": "UX Design",
+                "description": [
+                    "I design visually appealing user interfaces, not just to look good but to guide your user a through every interaction of you website or app.",
+                    "The user is at the forefront of each step of the process and the visual aspects of the UI are just an extension of the overall experience for the user.",
+                    "Every button, every input is there due to planning in the UX stage."
+                ]
+            },
+            {
+                "title": "UI Design",
+                "description": [
+                    "A stunning UI design isn't good enough on its own, it may be the soul of your website but the real heart is in how your users interact with your service or product.",
+                    "During the initial UX phase I aim to establish the most intuitive experience that helps to guide your users to accomplish the tasks they need to achieve. I do this through a series of sitemapping, information architecture and wireframing."
+                ]
+            }
+        ]
+    },{
+        "name": "work",
+        "heading_text": "PORTFOLIO",
+        "sub_text": "Case studies of previous UI design work",
+        "body_text": [
+            "You can read more about the UI/UX projects above in the case studies while I work on some more. You can also see snippets of other bits of work over on my dribbble profile"
+        ]
+    },{
+        "name": "test",
+        "heading_text": "Kinds Words",
+        "sub_text": "What clients have said about me & my design work",
+        "testimonials": [
+            {
+                "text": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.",
+                "name": "Anthony Williams",
+                "position": "Marketing Manager - Blackpool Winter Gardens"
+            },{
+                "text": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.",
+                "name": "SALLY BELL",
+                "position": "Creative Director - B1 Creative, Kingston-upon-Themes"
+            },{
+                "text": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.",
+                "name": "Tim Gaunt",
+                "position": "CEO - The Site Doctor, Herefordshire"
+            }
+        ]
+    },{
+        "name": "blog",
+        "heading_text": "blog",
+        "sub_text": "My 2 Cents on UI/UX & the world of freelancing"
+    }]
+}

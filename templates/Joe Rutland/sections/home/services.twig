@@ -1,0 +1,16 @@
+<section id="{{section.name}}">
+    <h1>{{section.sub_text}}</h1>
+    <h3>{{section.heading_text}}</h3>
+    
+    <div class="jobs">
+        {% for job in section.jobs %}
+            <div class="job">
+                <strong>{{job.title}}</strong>
+                {% for paragraph in job.description %}
+                    <p>{{paragraph}}</p>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+</section>

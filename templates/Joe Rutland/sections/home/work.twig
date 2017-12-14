@@ -1,0 +1,22 @@
+<section id="{{section.name}}">
+    <h1>{{section.sub_text}}</h1>
+    <h3>{{section.heading_text}}</h3>
+
+
+    <div class="show-case">
+        {% for work in page.dependencies.work %}
+            <a class="workExample" href="{{ROOT}}{{work.link}}">
+                <div class="show-case-image" style="background-image: url({{ROOT}}{{work.featured_image}})">
+                    <div class="show-case-content">
+                        <h4>{{work.name}}</h4>
+                        <p class="tag-line">{{work.tag_line}}</p>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
+    {% for paragraph in section.body_text %}
+        <p>{{paragraph}}</p>
+    {% endfor %}
+</section>

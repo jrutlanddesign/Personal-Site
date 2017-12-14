@@ -1,0 +1,40 @@
+<html>
+<head>
+    {% if page.title %}
+        <title>{{page.title}} | Joe Rutland</title>
+    {% else %}
+        <title>404 - Page Not Found | Joe Rutland</title>
+    {% endif %}
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{{ROOT}}assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpeg" href="{{ROOT}}{{site.fav_icon}}" />
+    <link rel="icon" type="image/png" href="{{ROOT}}{{site.fav_icon}}" />
+    <link rel="icon" type="image/gif" href="{{ROOT}}{{site.fav_icon}}" />
+</head>
+<body>
+
+<div class="wrapper">
+
+<header>
+    <a href="{{ROOT}}"><h3>{{site.nav.title}}</h3></a>
+
+    <nav>
+        <div class="menu">
+            <h2>Menu</h2>
+            <span class="close-menu">
+                <span class="cross"></span>
+                <span class="cross"></span>
+            </span>
+        </div>
+        {% for link in site.nav.links %}
+        <a href="{{link.href}}">{{link.text}}</a>
+        {% endfor %}
+    </nav>
+
+    <div class="hamburger">
+        <span class="slice"></span>
+        <span class="slice"></span>
+        <span class="slice"></span>
+    </div>
+</header>

@@ -1,0 +1,14 @@
+<section id="{{section.name}}">
+    <h2>{{section.heading_text}}</h2>
+    <h5>{{section.sub_text}}</h5>
+
+    <div class="social-container">
+        <div class="wrapper">
+            <div class="social">
+                {% for social in site.social %}
+                    <a href="{{social.link}}" target="_blank" title="{{social.name}}">{{ social.icon | raw}}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

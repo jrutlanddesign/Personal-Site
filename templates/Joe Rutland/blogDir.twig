@@ -1,0 +1,26 @@
+{{ include('./sections/header.twig') }}
+
+<div class="blogOverview">
+    {% for content in page.dirContent %}
+    <div class="blog-example" >
+        <div class="blog-start-section">
+            <h5>{{content.title}}</h5>
+            <span class="blog-date">{{content.date}}</span>
+            {% for paragraph in content.description %}
+                <p>{{paragraph}}</p>
+            {% endfor %}
+        </div>
+        <div class="blog-footer-seaction">
+            <a href="{{ROOT}}{{content.link}}">Read More</a>
+            <div class="tags">
+            {% for tag in content.tags %}
+                <p>{{tag}}</p>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{{ include('./sections/footer.twig') }}

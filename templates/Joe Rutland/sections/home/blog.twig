@@ -1,0 +1,29 @@
+<section id="{{section.name}}">
+    <h1>{{section.sub_text}}</h1>
+    <h3>{{section.heading_text}}</h3>
+
+
+    <div class="blog-examples">
+        {% for blog in page.dependencies.blog %}
+            <div class="blog-example" >
+                <div class="blog-start-section">
+                    <h5>{{blog.title}}</h5>
+                    <span class="blog-date">{{blog.date}}</span>
+                    {% for paragraph in blog.description %}
+                        <p>{{paragraph}}</p>
+                    {% endfor %}
+                </div>
+                <div class="blog-footer-seaction">
+                    <a href="{{ROOT}}{{blog.link}}">Read More</a>
+                    <div class="tags">
+                    {% for tag in blog.tags %}
+                        <p>{{tag}}</p>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    
+</section>

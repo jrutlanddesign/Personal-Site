@@ -1,0 +1,15 @@
+<section id="{{section.name}}">
+    <h1>{{section.sub_text}}</h1>
+    <h3>{{section.heading_text}}</h3>
+    
+    <div class="testimonials">
+        {% for testimonial in section.testimonials %}
+            <div class="testimonial">
+                <p>{{testimonial.text}}</p>
+                <h6 class="name">{{testimonial.name}}</h6>
+                <span class="position">{{testimonial.position}}</span>
+            </div>
+        {% endfor %}
+    </div>
+
+</section>

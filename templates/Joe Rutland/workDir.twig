@@ -1,0 +1,19 @@
+{{ include('./sections/header.twig') }}
+
+
+<div class="workOveriew">
+    {% for content in page.dirContent %}
+    <a class="workExample" href="{{ROOT}}{{content.link}}">
+        <div class="show-case-image" style="background-image: url({{ROOT}}{{content.featured_image}})">
+            <div class="show-case-content">
+                <h4>{{content.name}}</h4>
+                <p class="tag-line">{{content.tag_line}}</p>
+            </div>
+        </div>
+    </a>
+
+    {% endfor %}
+</div>
+
+
+{{ include('./sections/footer.twig') }}

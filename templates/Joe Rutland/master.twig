@@ -1,0 +1,5 @@
+{{ include('./sections/header.twig') }}
+    {% for section in page.sections %}
+        {% include('./sections/'~ currentPage ~'/'~ section.name ~'.twig') %}
+    {% endfor %}
+{{ include('./sections/footer.twig') }}

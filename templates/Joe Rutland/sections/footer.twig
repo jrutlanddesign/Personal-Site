@@ -1,9 +1,41 @@
 
-</div>
+
+</div><!--//wrapper-->
+
+<section id="footer" data-aos="fade-up" data-aos-duration="2000">
+    <div class="wrapper">
+        <h2>Got a design project? Great, I'm available <img src="{{ROOT}}assets/images/wave-emoji.png" alt="wave emoji"></h2>
+        
+        <div class="about-wrapper">
+            <div class="text">
+                <ul class="contactMe">
+                    <li>mobile - {{site.mobile}}</li>
+                    <li>email - {{site.email_address}}</li>
+                </ul>
+
+                <ul class="socials">
+                    <li class="insta"><a href="{{site.social[1].link}}" title="Photos of design work and personal life" target="_blank">{{site.social[1].name}}</a></li>
+                    <li class="twitter"><a href="{{site.social[2].link}}" title="tweet or DM me on Twitter" target="_blank">{{site.social[2].name}}</a></li>
+                    <li class="dribbble"><a href="{{site.social[0].link}}" title="See snippets of UI design work on Dribbble" target="_blank">{{site.social[0].name}}</a></li>
+                </ul>
+            </div>
+        </div>
+       
+       </div><!--//wrapper-->
+    </section>
+
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-88906270-1');ga('send','pageview');
+    </script>
 
 
+    <script src="{{ROOT}}assets/js/joe.js"></script>
 
-
-<script src="{{ROOT}}assets/js/joe.js"></script>
+    
 </body>
 </html>

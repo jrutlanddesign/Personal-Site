@@ -1,5 +1,6 @@
 {
-    "title": "Freelance UI / UX Designer United Kingdom",
+    "title": "UI Design portfolio of UK based Freelance UI Designer Joe Rutland",
+    "metadescrip": "Joe Rutland is a Freelance UI Designer, designing beautiful UI designs for web and mobile apps with clients around the world from his base in Blackpool, UK",
     "uses": [{
         "page": "blog",
         "limit": 2
@@ -9,35 +10,24 @@
     }],
     "sections": [{
         "name": "intro",
-        "heading_text": "A freelance UI & UX designer for digital products.",
-        "sub_text": "I create interfaces and experiences for businesses big and small across the UK"
-    },{
-        "name": "about",
-        "heading_text": "About Me",
-        "sub_text": "The man, the myth, the designer",
-        "body_text": [
-            "Thanks for visiting my UI design portfolio. I'm a freelance UI designer based in Blackpool, Lancashire.",
-            "For over a decade I have been crafting modern, usable interfaces for the web and mobile apps with clients around the world.",
-            "I love creating designs for startups and businesses with a genuine passion for their digital products and services, who value design and how it solves business problems with good user experience.",
-            "I am currently taking on new UI design projects. If you're in need of a design solution for your business, let’s chat.",
-            "Still want to know more about me and find out what makes me tick? Here’s a more detailed look into me."
-        ],
-        "image": "assets/images/joe.jpg"
+        "heading_text": "A freelance UI / UX designer for digital products.",
+        "sub_text": "I create interfaces & experiences for businesses big and small across the UK and beyond",
+        "availability": "I'm currently available for <a href='/contact'>new projects</a>"
     },{
         "name": "services",
         "heading_text": "services",
         "sub_text": "Helping your business with design solutions",
         "jobs": [
             {
-                "title": "UX Design",
+                "title": "User Interface (UI) Design",
                 "description": [
                     "I design visually appealing user interfaces, not just to look good but to guide your user a through every interaction of you website or app.",
                     "The user is at the forefront of each step of the process and the visual aspects of the UI are just an extension of the overall experience for the user.",
-                    "Every button, every input is there due to planning in the UX stage."
+                    "Every button, every input is there due to research and planning during the UX stage."
                 ]
             },
             {
-                "title": "UI Design",
+                "title": "User Experience (UX) Design",
                 "description": [
                     "A stunning UI design isn't good enough on its own, it may be the soul of your website but the real heart is in how your users interact with your service or product.",
                     "During the initial UX phase I aim to establish the most intuitive experience that helps to guide your users to accomplish the tasks they need to achieve. I do this through a series of sitemapping, information architecture and wireframing."
@@ -49,30 +39,40 @@
         "heading_text": "PORTFOLIO",
         "sub_text": "Case studies of previous UI design work",
         "body_text": [
-            "You can read more about the UI/UX projects above in the case studies while I work on some more. You can also see snippets of other bits of work over on my dribbble profile"
+            "Since going freelance in 2016 I've been lucky enough to work with a number of web design agencies around the UK, working on some big brands. But with that comes NDAs so unfortunatly I can't show everything I've been working on recently on here.",
+            "What's that you say? you want to feature here? <a href='/contact'>lets talk about your project</a> and we can make it happen."
         ]
     },{
-        "name": "test",
-        "heading_text": "Kinds Words",
-        "sub_text": "What clients have said about me & my design work",
-        "testimonials": [
-            {
-                "text": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.",
-                "name": "Anthony Williams",
-                "position": "Marketing Manager - Blackpool Winter Gardens"
-            },{
-                "text": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.",
-                "name": "SALLY BELL",
-                "position": "Creative Director - B1 Creative, Kingston-upon-Themes"
-            },{
-                "text": "Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna. Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. Etiam gravida mollis tortor quis porttitor.",
-                "name": "Tim Gaunt",
-                "position": "CEO - The Site Doctor, Herefordshire"
-            }
-        ]
+        "name": "about",
+        "heading_text": "About Me",
+        "sub_text": "The man, the myth, the designer",
+        "body_text": [
+            "I'm Joe, I'm a freelance UI designer based in Blackpool up on the North west coast of the UK.",
+            "For over a decade I have been crafting modern, usable interfaces for the web and mobile apps with clients around the world.",
+            "I love creating designs for startups and businesses with a genuine passion for their digital products and services, companies who value design and how it solves business problems with good user experience.",
+            "I am currently taking on new UI design projects. If you're in need of a design solution for your business, <a href='/contact'>let’s chat</a>.",
+            "Still want to know more about me and find out what makes me tick? Here’s a <a href='/about'>more detailed look into me</a>."
+        ],
+        "image": "assets/images/joe.jpg",
+        "pagelink": "about"
     },{
         "name": "blog",
         "heading_text": "blog",
         "sub_text": "My 2 Cents on UI/UX & the world of freelancing"
+    },{
+        "name": "test",
+        "heading_text": "Kind Words",
+        "sub_text": "What clients have said about me & my design work",
+        "testimonials": [
+            {
+                "text": "Joe has constantly exceeded our expectations across a wide range of web design projects. His desire to understand a project puts Joe ahead of his competitors proving work that truly reflects the company, its ethos and values. Both fast and efficient, Joe always provides a reliable service and is someone I would highly recommend.",
+                "name": "Anthony Williams",
+                "position": "Marketing Manager - Blackpool Winter Gardens"
+            },{
+                "text": "Joe has accomplished a number of websites for me, he is very hard-working, professional & always hits agreed deadlines. His designs are user-focused & have accumulated revenue for me. Joe has very high standards, & will accomplish anything that you throw his way.",
+                "name": "Daniel Joseph",
+                "position": "Director - Complete EPC, London"
+            }
+        ]
     }]
 }

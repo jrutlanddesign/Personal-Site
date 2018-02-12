@@ -1,0 +1,51 @@
+{{ include('./sections/header.twig') }}
+<section class="blog-container">
+    <section id="blogHeader">
+        <h1>Let's talk projects</h1>
+        <p>I'm currently available to take on new projects you can get in touch with me by filling out the small form below or <a href="#footer">grab my contact details</a></p>
+    </section><!-- #blogHeader -->
+
+    <div id="twocol">
+        <form form action="contactengine.php" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" name="name">
+
+            <label for="email">Email address</label>
+            <input type="email" name="email">
+
+            <label for="company">Company</label>
+            <input type="text" name="company">
+
+            <label for="url">Current URL</label>
+            <input type="text" name="url" placeholder="http://">
+
+            <label for="message">message</label>
+            <textarea name="message"></textarea>
+
+            <!--<div class="g-recaptcha" data-sitekey="6LcOsUIUAAAAANqG3MNuqxkx8EnfIPINScw6htkE"></div>-->
+
+            <button type="submit">Send your message</button>
+        </form>
+
+        <div class="text">
+            <ul class="contactMe">
+                <li>{{site.mobile}}</li>
+                <li>{{site.email_address}}</li>
+            </ul>
+
+            <ul class="socials">
+                <li class="insta"><a href="{{site.social[1].link}}" title="Photos of design work and personal life" target="_blank">{{site.social[1].name}}</a></li>
+                <li class="twitter"><a href="{{site.social[2].link}}" title="tweet or DM me on Twitter" target="_blank">{{site.social[2].name}}</a></li>
+                <li class="dribbble"><a href="{{site.social[0].link}}" title="See snippets of UI design work on Dribbble" target="_blank">{{site.social[0].name}}</a></li>
+            </ul>
+        </div><!-- .text -->
+    </div><!-- .twocol-->
+
+</section><!-- #blogContainer -->
+
+
+</div><!--//wrapper-->
+
+    <script src="{{ROOT}}assets/js/joe.js"></script>
+</body>
+</html>

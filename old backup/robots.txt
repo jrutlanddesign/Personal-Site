@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /craft/
+Disallow: /doc/
+
+Sitemap: https://jrutlanddesign.co.uk/sitemap.xml

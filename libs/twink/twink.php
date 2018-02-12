@@ -52,7 +52,7 @@ class twink {
     public function resolveURL(){
         $count = 1;
         $req = preg_replace('#'.$this->root().'#', "", $_SERVER['REQUEST_URI'], $count);
-
+        
         $content = null;
         $req = ($req === '') ? 'home' : htmlspecialchars($req);
         $this->currentRequest = $req;

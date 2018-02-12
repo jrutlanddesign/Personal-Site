@@ -1,12 +1,15 @@
-<section id="{{section.name}}">
-    <h1>{{section.sub_text}}</h1>
+<section id="{{section.name}}" data-aos="fade-up" data-aos-duration="2000">
+    <h2>{{section.sub_text}}</h2>
     <h3>{{section.heading_text}}</h3>
     
     <div class="about-wrapper">
         <div class="text">
             {% for paragaph in section.body_text %}
-                <p>{{paragaph}}</p>
+                <p>{{paragaph|raw}}</p>
             {% endfor %}
+
+            <a href="{{section.pagelink}}" class="linkBtn">more about me</a>
+
         </div>
         <img src="{{ROOT}}{{section.image}}" alt="Picture of me" class="me"/>
     </div>

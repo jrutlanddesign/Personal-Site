@@ -1,5 +1,5 @@
-<section id="{{section.name}}">
-    <h1>{{section.sub_text}}</h1>
+<section id="{{section.name}}" data-aos="fade-up" data-aos-duration="2000">
+    <h2>{{section.sub_text}}</h2>
     <h3>{{section.heading_text}}</h3>
 
 
@@ -17,6 +17,6 @@
     </div>
 
     {% for paragraph in section.body_text %}
-        <p>{{paragraph}}</p>
+        <p>{{paragraph|raw}}</p>
     {% endfor %}
 </section>

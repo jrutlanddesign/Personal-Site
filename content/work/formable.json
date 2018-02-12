@@ -1,0 +1,19 @@
+{
+    "title": "Formable",
+    "name": "Formable",
+    "tag_line": "UX consultant",
+    "featured_image": "assets/images/work/formable.jpg",
+    "date": "20th JAN 17",
+    "template": "caseStudy",
+    "images": ["<img src='../assets/images/work/formable-casestudy.png' alt='UI design for Fromable a Brighton based UX consultant'>"],
+    "metadescrip": "Design case study of UI design project for a London based UX consultant",
+    "tools": [
+        "Sketch",
+        "InVision"
+    ],
+    "body_text": [
+        "I was contracted to create a one page web design for London based UX consultant, Leah Ryz at the begining of the new year.",
+        "The design was needed to be simple but relay the USPs for Leah and how she works and drive potential clients to get in touch via a contact form.",
+        "Along with the UI design I created a base style guide for any future digital adjustments for the Formable website."
+    ]
+}

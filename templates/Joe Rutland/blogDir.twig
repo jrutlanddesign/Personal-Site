@@ -4,10 +4,10 @@
     {% for content in page.dirContent %}
     <div class="blog-example" >
         <div class="blog-start-section">
-            <h5>{{content.title}}</h5>
+            <a href="{{ROOT}}{{content.link}}" class="blogTitle"><h5>{{content.title}}</h5></a>
             <span class="blog-date">{{content.date}}</span>
-            {% for paragraph in content.description %}
-                <p>{{paragraph}}</p>
+            {% for exerpt in content.exerpt %}
+                <p>{{exerpt}}</p>
             {% endfor %}
         </div>
         <div class="blog-footer-seaction">
@@ -20,7 +20,7 @@
         </div>
     </div>
     {% endfor %}
-</div>
 
+</div>
 
 {{ include('./sections/footer.twig') }}

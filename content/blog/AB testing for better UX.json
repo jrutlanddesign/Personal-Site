@@ -1,0 +1,12 @@
+{
+    "title": "A/B testing for a better User Experience",
+    "metadescrip": "5 simple tips for improving the user experience (UX) of your website that you can implement now to improve your website and aim at more conversions",
+    "date": "3rd Mar 15",
+    "template": "blog",
+    "exerpt": ["A/B testing for web design is quite simply what it says in the title – testing the design of version A (the current design) against version B (a new design or alteration). Splitting the site traffic to the separate layouts, then measuring the metrics you want to change, analyse which layout performs better and overall increases the UX."],
+    "tags": [
+        "Tips",
+        "UX",
+        "UX Design"
+    ]
+}

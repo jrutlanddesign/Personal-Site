@@ -1,0 +1,19 @@
+{{ include('./sections/header.twig') }}
+<section class="blog-container">
+    <section id="blogHeader">
+        <h1>{{page.title}}</h1>
+        <h2>{{page.tag_line}}</h2>
+        
+    </section>
+
+    {% for paragraph in page.body_text %}
+        <p>{{paragraph|raw}}</p>
+    {% endfor %}
+
+</section>
+{{ include('./sections/footer.twig') }}
+
+
+
+
+

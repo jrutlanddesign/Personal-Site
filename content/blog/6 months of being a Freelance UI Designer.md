@@ -10,7 +10,7 @@ Since going freelance, I’ve kept my goals realistic. Setting my last wage as a
 
 I’m not breaking any records, splashing the cash all over.
 
-![I'm not making this kind of money yet as a freelance UI Designer](https://jrutlanddesign.co.uk/blog/wp-content/uploads/2017/02/original.gif)
+![I'm not making this kind of money yet as a freelance UI Designer](https://www.jrutlanddesign.co.uk/assets/images/money.gif)
 
 But what’s better is that I am happy in the work I’m doing, which in turns makes me happy at home. I get to meet and work with great people on UI projects that I really enjoy and feel passionate about.
 

@@ -1,10 +1,22 @@
 {
-    "title": "Multicolour - a REST API generator",
+    "title": "Multicolour",
     "name": "Multicolour",
     "tag_line": "a REST API generator",
     "featured_image": "assets/images/work/multicolour.png",
     "date": "19th DEC 17",
-    "images": [],
-    "description": [],
-    "collaborators": []
+    "template": "caseStudy",
+    "images": ["<img src='../assets/images/work/multicolour-casestudy.png' alt='Multicolour UI for the home page and the doc page'>"],
+    "metadescrip": "User interface dsign case study for Multicolour an REST API generator",
+    "tools": [
+        "Sketch",
+        "InVision"
+    ],
+    "body_text": [
+        "Multicolour is a REST API generator created by the highly talented <a href='https://twitter.com/daveymackintosh?lang=en' target='_blank'>Dave Mackintosh</a>",
+        "Dave built Multicolour from the ground up to make creating REST APIs a much quicker and smoother process.",
+        "In January 2016, Dave was on the lookout for a designer to join him as a cretive director on the product, and knowing Dave (via Twitter) for a number of years I jumped at the opportunity.",
+        "First of all we needed a rehaul of the marketing site, bring the blog and the docs inline with the already beautiful branding which is what we have here.",
+        "Keeping a clean clutter free style we mapped out the basic site structure and where we what we envisioned developers using the site will mainly want. ",
+        "Keep an eye out for updates to <a href='http://getmulticolour.com' target='_blank'>Multicolour</a> this year with V1 due out and new GUI to be added."
+    ]
 }

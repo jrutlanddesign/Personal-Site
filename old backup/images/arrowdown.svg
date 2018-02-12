@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="142px" height="477px" viewBox="0 0 142 477" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrowdown" fill="#6F6F6F">
+            <g id="Page-1">
+                <g id="arrowright" transform="translate(71.500000, 239.000000) rotate(90.000000) translate(-71.500000, -239.000000) translate(-167.000000, 168.000000)">
+                    <polygon id="Shape" points="405.606 0.5 384.394 21.713 418.787 56.106 4.21884749e-15 56.106 4.21884749e-15 86.106 418.787 86.106 384.394 120.5 405.606 141.713 476.213 71.106"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,11 +5,13 @@
     <div class="jobs">
         {% for job in section.jobs %}
             <div class="job">
-                <img src="{{job.icon}}" class="icon" alt="{{job.icon-alt}}">
-                <strong>{{job.title}}</strong>
-                {% for paragraph in job.description %}
+                <a href="{{ROOT}}services">
+                    <img src="{{job.icon}}" class="icon" alt="{{job.icon-alt}}">
+                    <h4>{{job.title}}</h4>
+                    {% for paragraph in job.description %}
                     <p>{{paragraph}}</p>
-                {% endfor %}
+                    {% endfor %}
+                </a>
             </div>
         {% endfor %}
     </div>

@@ -1,0 +1,22 @@
+{{ include('./sections/header.twig') }}
+<section class="blog-container">
+    <section id="blogHeader">
+        <h1>Design Services</h1>
+    </section><!-- #blogHeader -->
+
+    <div id="services">
+        {% for service in page.services %}
+            <div class="service {{service.class}}">
+                <h2>{{service.title}}</h2>
+                <img src="{{service.icon}}" class="icon" alt="{{service.icon-alt}}">
+                {% for paragraph in service.description %}
+                    <p>{{paragraph}}</p>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+</section><!-- #blogContainer -->
+
+
+{{ include('./sections/footer.twig') }}

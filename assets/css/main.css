@@ -10,6 +10,8 @@ body{
     padding: 75px 0px 0;
 }
 
+.pad { margin-top: 140px; }
+
 p > a {
     color: #ED6464;
     text-decoration: underline
@@ -52,6 +54,8 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+    transition: ease all 0.4s;
+    
 }
 header > a{
     text-decoration: none;
@@ -312,7 +316,7 @@ section h2{
 }
 
 h2 img {
-    height: 20px;s
+    height: 20px;
 }
 
 p{
@@ -732,6 +736,7 @@ a.linkBtn {
     color: rgba(255,255,255,0.3);
     letter-spacing: 0.5;
     font-weight: light;
+    text-transform: lowercase;
 }
 .blog-examples .blog-example .tags p:after,
 .blogOverview .blog-example .tags p:after{
@@ -1162,3 +1167,16 @@ div#twocol {
 #twocol form input, #twocol form textarea {
     width:100%
 }
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    transition: ease all 0.4s;
+    background-color: #1F1F1F;
+    display: flex;
+    width: 100%;
+    left: 0;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 10;
+  }

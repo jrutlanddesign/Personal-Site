@@ -1,17 +1,20 @@
 {{ include('./sections/header.twig') }}
-<section class="blog-container">
+<section class="blog-container no-border">
     <section id="blogHeader">
         <h1>Design Services</h1>
+        <p>Your wesite or app is much more than a pretty interface thrown together. It's a whole process and I'm here to help you through it to make sure your users get the experience they need.</p>
     </section><!-- #blogHeader -->
 
     <div id="services">
-        {% for service in page.services %}
+        {% for service in page.service %}
             <div class="service {{service.class}}">
-                <h2>{{service.title}}</h2>
                 <img src="{{service.icon}}" class="icon" alt="{{service.icon-alt}}">
-                {% for paragraph in service.description %}
-                    <p>{{paragraph}}</p>
-                {% endfor %}
+                <div>
+                    <h2>{{service.title}}</h2>
+                    {% for paragraph in service.description %}
+                        <p>{{paragraph|raw}}</p>
+                    {% endfor %}
+                </div>
             </div>
         {% endfor %}
     </div>

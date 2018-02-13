@@ -1,5 +1,5 @@
 {
-    "title": "UI Design portfolio of UK based Freelance UI Designer Joe Rutland",
+    "title": "Design portfolio of UK based Freelance UI Designer Joe Rutland",
     "metadescrip": "Joe Rutland is a Freelance UI Designer, designing beautiful UI designs for web and mobile apps with clients around the world from his base in Blackpool, UK",
     "uses": [{
         "page": "blog",
@@ -19,20 +19,21 @@
         "sub_text": "Helping your business with design solutions",
         "jobs": [
             {
-                "title": "User Interface (UI) Design",
+                "title": "User Experience Design (UX)",
+                "icon": "assets/images/ux-design-icon.svg",
+                "icon-alt": "User experience, brain icon",
                 "description": [
-                    "I design visually appealing user interfaces, not just to look good but to guide your user a through every interaction of you website or app.",
-                    "The user is at the forefront of each step of the process and the visual aspects of the UI are just an extension of the overall experience for the user.",
-                    "Every button, every input is there due to research and planning during the UX stage."
+                    "Thorough understanding of your users & how they they interact with every element of the UI creating the best overall experience"
                 ]
-            },
-            {
-                "title": "User Experience (UX) Design",
+            },{
+                "title": "Visual & UI Design",
+                "icon": "assets/images/ui-design-icon.svg",
+                "icon-alt": "User interface, screen and pencil icon",
                 "description": [
-                    "A stunning UI design isn't good enough on its own, it may be the soul of your website but the real heart is in how your users interact with your service or product.",
-                    "During the initial UX phase I aim to establish the most intuitive experience that helps to guide your users to accomplish the tasks they need to achieve. I do this through a series of sitemapping, information architecture and wireframing."
+                    "Visually stunning interfaces designed to guide your user though each interaction within your service or product."
                 ]
             }
+            
         ]
     },{
         "name": "work",

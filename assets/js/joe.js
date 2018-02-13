@@ -62,10 +62,20 @@
         
     }
 
-
-
-
-
-
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 150) {
+           $('header').addClass('fixed-header');
+           $('body').addClass('pad');
+        }
+        else {
+           $('header').removeClass('fixed-header');
+           $('body').removeClass('pad');
+        }
+    });
 
 })();
+
+
+
+
+

@@ -470,6 +470,12 @@ strong{
     margin-right: 10%;
 }
 
+#services .jobs .job .icon {
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+
 @media screen and (max-width: 770px){
     #services .jobs{
         flex-direction: column;

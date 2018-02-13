@@ -5,6 +5,7 @@
     <div class="jobs">
         {% for job in section.jobs %}
             <div class="job">
+                <img src="{{job.icon}}" class="icon" alt="{{job.icon-alt}}">
                 <strong>{{job.title}}</strong>
                 {% for paragraph in job.description %}
                     <p>{{paragraph}}</p>

@@ -8,6 +8,8 @@
 body{
     background-color: #1F1F1F;
     padding: 75px 0px 0;
+    z-index: 0;
+    margin-bottom: 350px;
 }
 
 .pad { margin-top: 140px; }
@@ -28,6 +30,7 @@ p > a {
     margin: 0 auto;
     padding: 0px 150px;
     width: 100%;
+    background-color: #1f1f1f;
 }
 
 @media screen and (max-width: 950px){
@@ -290,7 +293,7 @@ section#footer:after {
 }
 
 
-section h3{
+section h3, section a h3{
     position: absolute;
     top: 0;
     left: -150px;
@@ -302,9 +305,10 @@ section h3{
     z-index: 0;
     width: calc(100% + 300px);
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-section h2{
+section h2, section a h2{
     position: relative;
     z-index: 1;
     padding: 75px 0;
@@ -313,6 +317,11 @@ section h2{
     font-size: 24px;
     letter-spacing: 2.67px;
     line-height: 27px;
+    text-decoration: none;
+}
+
+.titleAnc {
+    text-decoration: none;
 }
 
 h2 img {
@@ -791,7 +800,15 @@ a.blogTitle:after {
 #footer {
     background: #151515;
     padding: 0px 0 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
 
+#footer > .wrapper {
+    background: #151515;
 }
 
 #footer .text {
@@ -1191,3 +1208,60 @@ div#twocol {
     padding: 20px;
     z-index: 10;
   }
+
+.service {
+    display:  flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+    padding: 60px 0 60px;
+}
+
+
+
+.service:first-of-type {
+    padding: 0 0 60px;
+}
+
+.service:last-of-type {
+    padding: 60px 0 0;
+    border-bottom: none;
+}
+
+.service h2 {
+    width: 100%;
+}
+
+.service img {
+    width: 100px;
+}
+
+.service div {
+    width: calc(100% - 200px);
+}
+
+.service > div > h2 {
+    padding: 0 0 30px;
+}
+
+
+@media screen and (max-width: 750px){
+    .service {
+        display:  block;
+    }
+    
+    .service img {
+        width: 100px;
+        display: block;
+        margin: 30px;
+    }
+
+    .service h2, .service div {
+        width: 100%;
+    }
+}
+
+section.no-border::after {
+    background: none;
+}

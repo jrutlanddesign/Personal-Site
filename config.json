@@ -8,6 +8,10 @@
         "title": "Joe Rutland",
         "links": [
             {
+                "text": "services",
+                "href": "/services"
+            },
+            {
                 "text": "blog",
                 "href": "/blog"
             },

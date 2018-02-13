@@ -474,6 +474,17 @@ strong{
     margin-right: 10%;
 }
 
+#services .jobs .job h4 {
+    color: #FFF;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.job > a {
+    text-decoration: none;
+}
+
 #services .jobs .job .icon {
     height: 40px;
     margin-bottom: 30px;

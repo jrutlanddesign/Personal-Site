@@ -19,10 +19,34 @@ p > a {
     text-decoration: underline
 }
 
+a.btn {
+    background: none;
+    border: solid 2px #ffffff1c;
+    padding: 10px 15px;
+    color:  white;
+    font-size: 0.8rem;
+    letter-spacing:  0.1rem;
+    text-decoration:  none;
+    margin: 50px 0 0;
+    display:  inline-block;
+    transition: ease all 0.4s
+}
+
+a.btn:hover {
+    background-color: #ed6464;
+    border-color: #ed6464;
+}
+
 @media screen and (max-width: 425px){
     body{
         padding: 45px 0px;
     }
+}
+
+#bodyWrap {
+    background-color: #1F1F1F;
+    z-index: 1;
+    padding-bottom: 50px;
 }
 
 .wrapper{
@@ -189,9 +213,10 @@ section:after{
     margin-bottom: 75px;
 }
 
-section#footer:after {
+section#footer:after,section#test:after {
     display: none;
 }
+
 
 @media screen and (max-width: 700px){
     section:after{

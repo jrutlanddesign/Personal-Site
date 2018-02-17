@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow:
+SITEMAP: https://jrutlanddesign.co.uk/sitemap.xml

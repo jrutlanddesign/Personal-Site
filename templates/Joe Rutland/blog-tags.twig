@@ -1,7 +1,10 @@
 {{ include('./sections/header.twig') }}
 
 <div class="blogOverview">
-    {% for content in page.dirContent %}
+
+    <h1>Articles Tagged <span class="blog-tag">{{page.tag}}</span></h1>
+
+    {% for content in page.articles %}
     <div class="blog-example" >
         <div class="blog-start-section">
             <a href="{{ROOT}}{{content.link}}" class="blogTitle"><h5>{{content.title}}</h5></a>

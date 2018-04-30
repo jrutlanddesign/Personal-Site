@@ -10,6 +10,7 @@ body{
     padding: 75px 0px 0;
     z-index: 0;
     margin-bottom: 350px;
+    overflow-x: hidden;
 }
 
 .pad { margin-top: 140px; }
@@ -371,10 +372,10 @@ strong{
 }
 
 @media screen and (max-width: 1200px){
-    section h2{
+    section h2, section a h2{
         font-size: 38px;
     }
-    section h3{
+    section h3, section a h3{
         padding: 55px 0 75px;    
         padding: 10px 0 75px;
         font-size: 154px;
@@ -383,12 +384,12 @@ strong{
 }
 
 @media screen and (max-width: 1000px){
-    section h2{
+    section h2, section a h2{
         font-size: 37px;
         max-width: 90%;
         line-height: 40px;
     }
-    section h3{
+    section h3, section a h3{
         padding: 35px 0 75px;    
         font-size: 112px;
         letter-spacing: 2.67px;
@@ -397,13 +398,13 @@ strong{
 }
 
 @media screen and (max-width: 950px){
-    section h2{
+    section h2, section a h2{
         width: calc(100% + 100px);
     }
 }
 
 @media screen and (max-width: 760px){
-    section h2{
+    section h2, section a h2{
         font-size: 30px;
         left: 0;
         width: calc(100% + 20px);
@@ -412,7 +413,7 @@ strong{
         max-width: 80%;
     }
 
-    section h3{
+    section h3, section a h3{
         padding: 80px 0 45px;    
         font-size: 20px;
         letter-spacing: 2.67px;
@@ -422,7 +423,7 @@ strong{
 }
 
 @media screen and (max-width: 570px){
-    section h2{
+    section h2, section a h2{
         font-size: 30px;
         left: 0;
         width: calc(100% + 20px);
@@ -431,7 +432,7 @@ strong{
         max-width: 80%;
     }
 
-    section h3{
+    section h3, section a h3{
         padding: 80px 0 45px;    
         font-size: 20px;
         letter-spacing: 2.67px;
@@ -441,11 +442,11 @@ strong{
 }
 
 @media screen and (max-width: 435px){
-    section h2{
+    section h2, section a h2{
         font-size: 22px;
         padding: 50px 0;
     }
-    section h3{
+    section h3, section a h3{
         padding: 50px 0 45px;   
         padding: 0;
     left: 0; 
@@ -1289,4 +1290,25 @@ div#twocol {
 
 section.no-border::after {
     background: none;
+}
+
+
+.blogOverview h1{
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 100px;
+}
+
+.blogOverview h1 .blog-tag{
+    color: #ed6464;
+}
+.blog-container .tags p a,
+.tags a{
+    color: inherit;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    text-decoration: none;
+}
+.tags a:after{
+    display: none;
 }

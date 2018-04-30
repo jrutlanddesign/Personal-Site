@@ -6,7 +6,7 @@
         
         <div class="tags">
             {% for tag in page.tags %}
-                <p>{{tag}}</p>
+                <p><a href="{{ROOT ~ 'blog/tag/' ~ tag|get_link}}">{{tag}}</a></p>
             {% endfor %}
         </div>
     </section>

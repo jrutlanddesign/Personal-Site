@@ -14,7 +14,8 @@ class twink {
     private $currentRequest = "";
     private $defaults = array(
         "content" => "content/",
-        "templates" => "templates/"
+        "templates" => "templates/",
+        "blog_tag_overview" => "blog-tags"
     );
 
     private $twigFilters = array(
@@ -87,11 +88,63 @@ class twink {
 
     private function getSinglePageInfo($filePath, $filetype = "json"){
         $path = $this->resolve_link($filePath, $filetype);
-        if(!file_exists($path)) return null;
-        $content = json_decode(file_get_contents($path), true);
-        if(strpos($filePath,'blog') !== false){
-            $markdown = $this->resolve_link($filePath, 'md');
-            if(file_exists($markdown)) $content['markdown'] = file_get_contents($markdown);
+        
+        $files = explode('/', $filePath);
+        $overviewPage = ($files[0] == $files[1]);
+
+        
+        if(strpos($filePath, 'blog') !== false && !$overviewPage){
+
+            if(strpos($filePath, '/tag/')){
+                $requested_tag = explode('/',$filePath);
+                $requested_tag = str_replace('-', ' ' , $requested_tag[count($requested_tag) - 1]);
+
+                $blogs = array();
+                $blogTitles = $this->getDirListing($this->contentPath.'/blog/');
+                foreach($blogTitles as $blogTitle){
+                    $found = false;
+                    $blog = file_get_contents($this->contentPath.'/blog/'.$blogTitle);
+                    preg_match_all("/{(.*)}/", $blog, $matches);
+                    $markdown = $matches[0];
+                    $blog = explode($markdown[0], str_replace($markdown[1],"",$blog));
+                    $content = json_decode(trim($blog[0]), true);
+                    if(!isset($content['tags']) || empty($content['tags'])) continue;
+                    foreach($content['tags'] as $tag){
+                        if(strtolower($requested_tag) == strtolower($tag)) $found = true;
+                    }
+                    if(!$found) continue;
+                    $content['markdown'] = trim($blog[1]);
+                    $excerpt = substr(trim($blog[1]),0,strpos(trim($blog[1])," ", 300));
+                    $excerpt = (strlen($excerpt) >= 300) ? $excerpt.'..' : $excerpt;
+                    $content['excerpt'] = $excerpt;
+                    $content['link'] = $this->get_link('blog/'.$blogTitle);
+                    array_push($blogs, $content);
+                }
+                if(empty($blogs)) return;
+                $content = array();
+                $content['template'] = $this->defaults['blog_tag_overview'];
+                $content['tag'] = $requested_tag;
+                $content['title'] = 'Blog Articles Tagged '.$requested_tag;
+                $content['articles'] = $blogs;
+
+            } else {
+                if(!file_exists($path)) return null;
+                $blogContent = file_get_contents($path);
+                preg_match_all("/{(.*)}/", $blogContent, $matches);
+                $markdown = $matches[0];
+                
+                $blogContent = explode($markdown[0], str_replace($markdown[1],"",$blogContent));
+                $content = json_decode(trim($blogContent[0]), true);
+                $content['markdown'] = trim($blogContent[1]);
+                $excerpt = substr(trim($blogContent[1]),0,strpos(trim($blogContent[1])," ", 300));
+                $excerpt = (strlen($excerpt) >= 300) ? $excerpt.'..' : $excerpt;
+                $content['excerpt'] = $excerpt;
+
+            }
+
+        } else {
+            if(!file_exists($path)) return null;
+            $content = json_decode(file_get_contents($path), true);
         }
         if(isset($content['uses'])) $content['dependencies'] = $this->getDependencies($content['uses']);
         return $content;
@@ -188,7 +241,7 @@ class twink {
     static function get_link($name){
         $link = str_replace(' ', '-', $name);
         $link = str_replace('.json', '', $link);
-        return $link;
+        return strtolower($link);
     }
 
     private function stripExt($filePath){
